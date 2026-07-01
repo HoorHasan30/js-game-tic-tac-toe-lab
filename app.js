@@ -125,13 +125,9 @@ function checkForTie(){
         return
     }  
 
-    board.forEach(
-        function(i){
-            if( i == ''){
-                tie = false
-            }
-        }
-    )
+    if(!board.includes('')){
+        tie = true
+    }
 
 }
 
